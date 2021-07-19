@@ -87,7 +87,7 @@ const Home = () => {
                 </div>
                 <br></br>
                 <div class="text-center">
-                    <NavLink to="/courses" class="btn btn-primary ">Browse Video Courses</NavLink>
+                    <NavLink to="/courses" class="btn btn-primary">Browse Video Courses</NavLink>
                 </div>
             </div>
             <div class="my-5 py-5" />

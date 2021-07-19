@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import Home from './Home'
+import Home from './Home';
+import blog from './blog';
 import courses from './courses';
 import { Switch, Route, Redirect } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
@@ -16,6 +17,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={Home}></Route>
         <Route exact path='/courses' component={courses}></Route>
+        <Route exact path='/blog' component={blog}></Route>
         <Redirect to="/" />
       </Switch>
     </>
