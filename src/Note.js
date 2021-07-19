@@ -1,4 +1,9 @@
 import React from 'react'
+import tat_4thsem from './components/img/4th sem.jpeg';
+import tat_5thsem from './components/img/5th sem.jpeg';
+import tat_6thsem from './components/img/6th sem.jpeg';
+import tat_7thsem from './components/img/7th sem.jpeg';
+import tat_8thsem from './components/img/8th sem.jpeg';
 
 const Note = () => {
     return (
@@ -17,7 +22,7 @@ const Note = () => {
                             <h2><span class="small">B.tech </span> Semester</h2>
                         </div>
                         <div class="body">
-                            <img src="http://placehold.it/1000x500" alt="Graphic" />
+                            <img src={tat_4thsem} alt="Graphic" />
                             <a
                                 href="https://drive.google.com/drive/folders/19hR4AiAgHmdh4_1Qwl96Ipc9aI-1R_Ix?usp=sharing">
                                 <button type="button" class="btn btn-outline-danger book_btn">Read More</button>
@@ -34,7 +39,7 @@ const Note = () => {
                         </div>
                         <div class="body">
                             <p><b> coming soon</b></p>
-                            <img src="http://placehold.it/1000x500" alt="Graphic" />
+                            <img src={tat_5thsem} alt="Graphic" />
                         </div>
                     </div>
 
@@ -47,7 +52,7 @@ const Note = () => {
                         </div>
                         <div class="body">
                             <p><b> coming soon</b></p>
-                            <img src="http://placehold.it/1000x500" alt="Graphic" />
+                            <img src={tat_6thsem} alt="Graphic" />
                         </div>
                     </div>
 
@@ -60,7 +65,7 @@ const Note = () => {
                         </div>
                         <div class="body">
                             <p><b> coming soon</b></p>
-                            <img src="http://placehold.it/1000x500" alt="Graphic" />
+                            <img src={tat_7thsem} alt="Graphic" />
                         </div>
                     </div>
 
@@ -73,7 +78,7 @@ const Note = () => {
                         </div>
                         <div class="body">
                             <p><b> coming soon</b></p>
-                            <img src="http://placehold.it/1000x500" alt="Graphic" />
+                            <img src={tat_8thsem} alt="Graphic" />
                         </div>
                     </div>
                 </div>
