@@ -4,7 +4,12 @@ import $ from 'jquery';
 import tat from './img/main_2.png';
 import { NavLink } from 'react-router-dom';
 
+// Loading animation
+import { useState } from 'react'
+import LoadingBar from 'react-top-loading-bar'
+
 const Navbar = () => {
+    const [progress, setProgress] = useState(0)
     return (
         <>
             <div class="navigation-wrap bg-light start-header start-style">
@@ -13,7 +18,7 @@ const Navbar = () => {
                         <div class="col-17">
                             <nav class="navbar navbar-expand-md navbar-light">
                                 <NavLink class="navbar-brand" to="/">
-                                    <img src={tat} alt="" />
+                                    <img src={tat} alt="" onClick={() => setProgress(100)} />
                                 </NavLink>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
@@ -21,19 +26,19 @@ const Navbar = () => {
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav ml-auto py-4 py-md-0">
                                         <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
-                                            <NavLink exact activeClassName="nav_act" to="/" >Home</NavLink >
+                                            <NavLink exact activeClassName="nav_act" to="/" onClick={() => setProgress(100)}>Home</NavLink >
                                         </li>
                                         <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                            <NavLink exact activeClassName="nav_act" to="/courses" >Courses</NavLink >
+                                            <NavLink exact activeClassName="nav_act" to="/courses" onClick={() => setProgress(100)} >Courses</NavLink >
                                         </li>
                                         <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                            <NavLink exact activeClassName="nav_act" to="/blog" >Blog</NavLink >
+                                            <NavLink exact activeClassName="nav_act" to="/blog" onClick={() => setProgress(100)} >Blog</NavLink >
                                         </li>
                                         <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                            <NavLink exact activeClassName="nav_act" to="/books" >Books</NavLink >
+                                            <NavLink exact activeClassName="nav_act" to="/books" onClick={() => setProgress(100)}>Books</NavLink >
                                         </li>
                                         <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                            <NavLink exact activeClassName="nav_act" to="/about" >About</NavLink >
+                                            <NavLink exact activeClassName="nav_act" to="/about" onClick={() => setProgress(100)} >About</NavLink >
                                         </li>
                                     </ul>
                                 </div>
@@ -42,6 +47,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
+            <LoadingBar color="#F1C40F" fixed={false} height='6px' progressDuration={100} progress={progress} onLoaderFinished={() => setProgress(0)} />
         </>
     );
 }

@@ -7,7 +7,8 @@ import courses from './courses';
 import about from './about';
 import notes from './Note';
 import Contact_me from './Contact_me';
-import { Switch, Route, Redirect } from "react-router-dom";
+import notpage from './notpage';
+import { Switch, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 
@@ -26,7 +27,7 @@ function App() {
         <Route exact path='/about' component={about}></Route>
         <Route exact path='/notes' component={notes}></Route>
         <Route exact path='/contact_me' component={Contact_me}></Route>
-        <Redirect to="/" />
+        <Route path="" component={notpage} />
       </Switch>
     </>
   );
