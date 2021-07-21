@@ -3,9 +3,16 @@ import $ from 'jquery';
 import './Home.css';
 import { NavLink } from 'react-router-dom';
 
+// Loading animation
+import { useState } from 'react'
+import LoadingBar from 'react-top-loading-bar'
+
 const Home = () => {
+    const [progress, setProgress] = useState(0)
+
     return (
         <>
+            <LoadingBar color="#F1C40F" fixed={false} height='6px' progressDuration={100} progress={progress} onLoaderFinished={() => setProgress(0)} />
             <div class="section full-height" >
                 <div class="absolute-center">
                     <div class="section">
@@ -22,7 +29,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <p>
-                                <a href="https://bholanathbarik9748.github.io/online_ide.github.io/" id="ide_btn" class="btn btn-warning my-2 ">
+                                <a href="https://bholanathbarik9748.github.io/online_ide.github.io/" id="ide_btn" class="btn btn-warning my-2 " onClick={() => setProgress(100)}>
                                     <b>Browse tat-it-official Online IDE</b></a>
                             </p>
                         </div>
@@ -37,7 +44,7 @@ const Home = () => {
                             <div class="card__content">
                                 <div class="card__title"><b>Class Notes</b></div>
                                 <p class="card__text">Learn class work from class notes. Examples are available with these class notes. here we provide all class note of IT branch (2019 - 2023).</p>
-                                <NavLink exact activeClassName="nav_act" class="btn btn-primary d-block " to="/notes" >Browse College Notes</NavLink >
+                                <NavLink exact activeClassName="nav_act" class="btn btn-primary d-block " to="/notes" onClick={() => setProgress(100)}>Browse College Notes</NavLink >
                             </div>
                         </div>
                     </li>
@@ -47,7 +54,7 @@ const Home = () => {
                             <div class="card__content">
                                 <div class="card__title"><b> Coding Articles</b></div>
                                 <p class="card__text">Some of the latest coding information compiled in the form of Blog. Keep your programming knowledge up to date with these blog.</p>
-                                <NavLink exact activeClassName="nav_act" class="btn btn-primary d-block " to="/blog" >Browse Blogs</NavLink >
+                                <NavLink exact activeClassName="nav_act" class="btn btn-primary d-block " to="/blog" onClick={() => setProgress(100)}>Browse Blogs</NavLink >
                             </div>
                         </div>
                     </li>
@@ -57,7 +64,7 @@ const Home = () => {
                             <div class="card__content">
                                 <div class="card__title"><b>  Contact Me</b></div>
                                 <p class="card__text">Learn programming from these free courses. Examples are available with these Courses. You can contact me for any doubt and I will get back to you!</p>
-                                <NavLink exact activeClassName="nav_act" class="btn btn-primary d-block " to="/contact_me" >Contact Me</NavLink >
+                                <NavLink exact activeClassName="nav_act" class="btn btn-primary d-block " to="/contact_me" onClick={() => setProgress(100)}>Contact Me</NavLink >
                             </div>
                         </div>
                     </li>
@@ -87,7 +94,7 @@ const Home = () => {
                 </div>
                 <br></br>
                 <div class="text-center">
-                    <NavLink to="/courses" class="btn btn-primary">Browse Video Courses</NavLink>
+                    <NavLink to="/courses" class="btn btn-primary" onClick={() => setProgress(100)}>Browse Video Courses</NavLink>
                 </div>
             </div>
             <div class="my-5 py-5" />

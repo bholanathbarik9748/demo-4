@@ -5,9 +5,15 @@ import tat_6thsem from './components/img/6th sem.jpeg';
 import tat_7thsem from './components/img/7th sem.jpeg';
 import tat_8thsem from './components/img/8th sem.jpeg';
 
+// Loading animation
+import { useState } from 'react'
+import LoadingBar from 'react-top-loading-bar'
+
 const Note = () => {
+    const [progress, setProgress] = useState(0)
     return (
         <>
+            <LoadingBar color="#F1C40F" fixed={false} height='6px' progressDuration={100} progress={progress} onLoaderFinished={() => setProgress(0)} />
             <br />
             <br />
             <section id="timeline" >
@@ -25,7 +31,7 @@ const Note = () => {
                             <img src={tat_4thsem} alt="Graphic" />
                             <a
                                 href="https://drive.google.com/drive/folders/19hR4AiAgHmdh4_1Qwl96Ipc9aI-1R_Ix?usp=sharing">
-                                <button type="button" class="btn btn-outline-danger book_btn">Read More</button>
+                                <button type="button" class="btn btn-outline-danger book_btn" onClick={() => setProgress(100)}>Read More</button>
                             </a>
                         </div>
                     </div>

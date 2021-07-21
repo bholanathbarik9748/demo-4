@@ -15,18 +15,24 @@ import 'bootstrap/dist/js/bootstrap.js';
 // components
 import Navbar from './components/Navbar';
 
+// Loading animation
+import { useState } from 'react'
+import LoadingBar from 'react-top-loading-bar'
+
 function App() {
+  const [progress, setProgress] = useState(0)
   return (
     <>
+      <LoadingBar color="#F1C40F" fixed={false} height='6px' progressDuration={100} progress={progress} onLoaderFinished={() => setProgress(0)} />
       <Navbar />
       <Switch>
-        <Route exact path='/' component={Home}></Route>
-        <Route exact path='/courses' component={courses}></Route>
-        <Route exact path='/blog' component={blog}></Route>
-        <Route exact path='/books' component={books}></Route>
-        <Route exact path='/about' component={about}></Route>
-        <Route exact path='/notes' component={notes}></Route>
-        <Route exact path='/contact_me' component={Contact_me}></Route>
+        <Route exact path='/' component={Home} onClick={() => setProgress(100)}></Route>
+        <Route exact path='/courses' component={courses} onClick={() => setProgress(100)}></Route>
+        <Route exact path='/blog' component={blog} onClick={() => setProgress(100)}></Route>
+        <Route exact path='/books' component={books} onClick={() => setProgress(100)}></Route>
+        <Route exact path='/about' component={about} onClick={() => setProgress(100)}></Route>
+        <Route exact path='/notes' component={notes} onClick={() => setProgress(100)}></Route>
+        <Route exact path='/contact_me' component={Contact_me} onClick={() => setProgress(100)}></Route>
         <Route path="" component={notpage} />
       </Switch>
     </>
