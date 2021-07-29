@@ -49,7 +49,9 @@ const Contact_me = () => {
             {/* Main Code */}
             <div class="contact_container">
                 <form id="contact" className="form" onSubmit={handleSubmit}>
-                    <h3>Contact us</h3>
+                    <p class="copyright-text text-center">
+                        <h3>Contact Us</h3>
+                    </p>
                     <h4>Fill out this form and we will get back to you as quickly as possible!</h4>
                     <fieldset>
                         <input placeholder="Full Name *" type="text" tabindex="1" value={name}
