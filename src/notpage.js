@@ -1,4 +1,8 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
+// Loading animation
+import { useState } from 'react'
+import LoadingBar from 'react-top-loading-bar'
 
 const notpage = () => {
     return (
@@ -11,6 +15,7 @@ const notpage = () => {
             <br />
             <br />
             <br />
+            <LoadingBar color="#F1C40F" fixed={false} height='6px' progressDuration={100} />
             <div class="bgimg">
                 <div class="topleft">
                 </div>
@@ -20,6 +25,9 @@ const notpage = () => {
                 </div>
                 <div class="bottomleft">
                     <p>The page you are looking for does not exist. How you got here is a mystery. But you can click the button below to go back to the homepage.</p>
+                    <div class="text-center">
+                        <NavLink to="/" class="btn btn-primary">go Back</NavLink>
+                    </div>
                 </div>
             </div>
         </>
