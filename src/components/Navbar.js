@@ -17,7 +17,7 @@ const Navbar = () => {
                     <div class="row">
                         <div class="col-17">
                             <nav class="navbar navbar-expand-md navbar-light">
-                                <NavLink class="navbar-brand" to="/">
+                                <NavLink class="navbar-brand" to="/" onClick={() => {window.location.href="/"}}>
                                     <img src={tat} alt="" onClick={() => setProgress(100)} />
                                 </NavLink>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
