@@ -25,7 +25,7 @@ const Navbar = () => {
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav ml-auto py-4 py-md-0">
-                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
+                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 " onClick={() => {window.location.href="/"}}>
                                             <NavLink exact activeClassName="nav_act" to="/" onClick={() => setProgress(100)}>Home</NavLink >
                                         </li>
                                         <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
