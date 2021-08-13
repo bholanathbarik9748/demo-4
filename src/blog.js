@@ -10,6 +10,15 @@ const blog = () => {
             <div class="row">
                 <div class="leftcolumn">
                     <h1 class="header"><b>Coding Articles By IT-Students</b></h1>
+                    
+                    <div class="card" id="blog_card">
+                        <img clssName="blog_img" src="https://spurzine.com/wp-content/uploads/2017/03/windows10.jpg" alt="Nature" />
+                        <h2><b>How to Find Your Computer IP Address on Windows 10</b></h2>
+                        <h5><p1>This article will tell you how you can easily find your public and private IP address on Windows 10. But before that, let’s get familiar with what is IP .........., jun 22, 2021</p1>
+                        </h5>
+                        <a href="https://bholanathbarik9748.github.io/blog_6.github.io/" id="blog_btn" class="btn btn-outline-danger">Read
+                            Blog</a>
+                    </div>
                     <div class="card" id="blog_card">
                         <img clssName="blog_img" src="https://cdn.hackernoon.com/hn-images/1*d_sp350-BXASE2XFmv8pRg.jpeg" alt="Nature" />
                         <h2><b>Install and Set up Android Studio in Windows</b></h2>
