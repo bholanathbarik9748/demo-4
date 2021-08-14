@@ -1,6 +1,6 @@
 # INTRO
 
-tat-it-official is a class website which is provide Online IDE,all Class Notes,premium udemy courses for free and much more [Create React App](http://tat-it-official.herokuapp.com/).
+tat-it-official is a class website which is provide Online IDE,all Class Notes,premium udemy courses for free and much more created by [Bholanath Barik](https://bholanath-barik-portfolio.netlify.app/).
 
 # Getting Started with Create React App
 
