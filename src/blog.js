@@ -10,7 +10,18 @@ const blog = () => {
             <div class="row">
                 <div class="leftcolumn">
                     <h1 class="header"><b>Coding Articles By IT-Students</b></h1>
-                    
+
+                    <div class="card" id="blog_card">
+                        <img clssName="blog_img" src="https://maharatech.gov.eg/pluginfile.php/147184/course/overviewfiles/mongo.jpg" alt="Nature" />
+                        <br />
+                        <br />
+                        <br />
+                        <h2><b>All MongoDb commands you will ever need</b></h2>
+                        <h5><p1>n this post, we will see a comprehensive list of all the MongoDB commands you will ever need as a MongoDB beginner. This list covers almost all the most used commands in MongoDB. ..........jun 31, 2021</p1>
+                        </h5>
+                        <a href="https://bholanathbarik9748.github.io/blog_7.github.io/" id="blog_btn" class="btn btn-outline-danger">Read
+                            Blog</a>
+                    </div>
                     <div class="card" id="blog_card">
                         <img clssName="blog_img" src="https://spurzine.com/wp-content/uploads/2017/03/windows10.jpg" alt="Nature" />
                         <h2><b>How to Find Your Computer IP Address on Windows 10</b></h2>
