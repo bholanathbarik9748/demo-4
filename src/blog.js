@@ -12,9 +12,16 @@ const blog = () => {
                     <h1 class="header"><b>Coding Articles By IT-Students</b></h1>
 
                     <div class="card" id="blog_card">
-                        <img clssName="blog_img" src="https://maharatech.gov.eg/pluginfile.php/147184/course/overviewfiles/mongo.jpg" alt="Nature" />
+                        <img clssName="blog_img" src="https://miro.medium.com/max/2000/1*WE_pJonC9b3hp7MEWLHYtQ.png" alt="Nature" />
                         <br />
-                        <br />
+                        <h2><b>Should You Upgrade To Windows 11 Just Yet? + Installation of Windows 11</b></h2>
+                        <h5><p1>Windows 11 is a major version of the Windows NT operating system developed by Microsoft that was announced on June 24, 2021, and is the successor to Windows 10, which was released in 2015. Windows 11 was released to the public on October 5, 2021, as a free upgrade...</p1>
+                        </h5>
+                        <a href="https://bholanathbarik9748.github.io/blog_8.github.io/" id="blog_btn" class="btn btn-outline-danger">Read
+                            Blog</a>
+                    </div>
+                    <div class="card" id="blog_card">
+                        <img clssName="blog_img" src="https://cdn-images-1.medium.com/fit/t/1600/480/1*0lgunvVYa8gZ_sfMHflyvw.jpeg" alt="Nature" />
                         <br />
                         <h2><b>All MongoDb commands you will ever need</b></h2>
                         <h5><p1>n this post, we will see a comprehensive list of all the MongoDB commands you will ever need as a MongoDB beginner. This list covers almost all the most used commands in MongoDB. ..........jun 31, 2021</p1>
@@ -23,7 +30,7 @@ const blog = () => {
                             Blog</a>
                     </div>
                     <div class="card" id="blog_card">
-                        <img clssName="blog_img" src="https://spurzine.com/wp-content/uploads/2017/03/windows10.jpg" alt="Nature" />
+                        <img clssName="blog_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Y5Fh2D2mvdc4XhlMDOZVUy1dnOfCbY2NlR4hCb7UozH3_MTn-F86zlwfjpeDS-ghYQw&usqp=CAU" height="1" alt="Nature" />
                         <h2><b>How to Find Your Computer IP Address on Windows 10</b></h2>
                         <h5><p1>This article will tell you how you can easily find your public and private IP address on Windows 10. But before that, let’s get familiar with what is IP .........., jun 22, 2021</p1>
                         </h5>
@@ -80,7 +87,7 @@ const blog = () => {
                 <div class="rightcolumn">
                     <div class="card" id="blog_card">
                         <h2><b>About College</b></h2>
-                        <img src="https://images.static-collegedunia.com/public/college_data/images/appImage/15030543711445408052TRIDENTBHUBANESWARNEW.jpg?tr=c-force" alt="" srcset="" />
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnGFMp40BTEwmcDXREBu6M3hBGtqlC2qtCkZjdOD06_ZiH6LJNkC1Q8Epf_xV7N_6VbE8&usqp=CAU" alt="" srcset="" />
                         <p1>Trident Academy of Technology, a name that has become a brand in the field of technical education, is today synonymous with excellence.Trident is where ....
                             <a className="more_coll" href="https://tat.trident.ac.in/about/">more</a>
                         </p1>
