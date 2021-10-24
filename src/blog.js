@@ -6,7 +6,6 @@ const blog = () => {
             <br />
             <br />
             <br />
-            <br />
             <div class="row">
                 <div class="leftcolumn">
                     <h1 class="header"><b>Coding Articles By IT-Students</b></h1>
@@ -87,7 +86,7 @@ const blog = () => {
                 <div class="rightcolumn">
                     <div class="card" id="blog_card">
                         <h2><b>About College</b></h2>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnGFMp40BTEwmcDXREBu6M3hBGtqlC2qtCkZjdOD06_ZiH6LJNkC1Q8Epf_xV7N_6VbE8&usqp=CAU" alt="" srcset="" />
+                        <img src="https://images.static-collegedunia.com/public/college_data/images/appImage/15030543711445408052TRIDENTBHUBANESWARNEW.jpg?tr=c-force" alt="" srcset="" />
                         <p1>Trident Academy of Technology, a name that has become a brand in the field of technical education, is today synonymous with excellence.Trident is where ....
                             <a className="more_coll" href="https://tat.trident.ac.in/about/">more</a>
                         </p1>
