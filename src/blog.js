@@ -5,10 +5,9 @@ const blog = () => {
         <>
             <br />
             <br />
-            <br />
             <div class="row">
                 <div class="leftcolumn">
-                    <h1 class="header"><b>Coding Articles By IT-Students</b></h1>
+                    <h1 class="header"><b>Blogs</b></h1>
 
                     <div class="card" id="blog_card">
                         <img clssName="blog_img" src="https://miro.medium.com/max/2000/1*WE_pJonC9b3hp7MEWLHYtQ.png" alt="Nature" />
@@ -126,7 +125,6 @@ const blog = () => {
                         <div class="row">
                             <div class="col-lg-12 col-12">
                                 <p class="copyright-text text-center">Copyright &copy; 2021 tat-it-official.herokuapp.com</p>
-                                <p class="copyright-text text-center">Designed by <a className="foot_name" rel="nofollow" href="https://github.com/bholanathbarik9748">Bholanath-Barik</a></p>
                             </div>
                         </div>
                     </div>

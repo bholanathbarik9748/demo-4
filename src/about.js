@@ -41,7 +41,6 @@ const about = () => {
                         <div class="row">
                             <div class="col-lg-12 col-12">
                                 <p class="copyright-text text-center">Copyright &copy; 2021 tat-it-official.herokuapp.com</p>
-                                <p class="copyright-text text-center">Designed by <a className="foot_name" rel="nofollow" href="https://github.com/bholanathbarik9748">Bholanath-Barik</a></p>
                             </div>
 
                         </div>
